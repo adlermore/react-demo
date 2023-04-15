@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import hello from './demo/example';
+import {sum} from './demo/example';
+import {getNameUser} from './demo/example';
 
+getNameUser('Ashot');
+hello();
+sum('1','65');
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
