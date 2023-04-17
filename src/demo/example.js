@@ -13,3 +13,5 @@ function getNameUser(Name){
     console.log(Name+' Hello');
 }
 export  {getNameUser};
+var x=42;
+alert(x+5);
