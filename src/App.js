@@ -1,46 +1,19 @@
 
-import logo from './logo.svg';
 import './App.css';
-import User from './demo/User';
-// import Name from './demo/firstcomp';
+import Product from './demo/Product';
+import Calculator from './demo/Calculator';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// function Surname(props){
-//   var hetaqrqirName = props.name;
-//   return(
-//     <p>My Surename is Jonson & {hetaqrqirName}</p>
-//   );
-// }
-
-// function Person(){
-//   let name= "Jony";
-//   return (
-//     <div>
-//       <h1>
-//         Welcome
-//       </h1>
-//       <p>Heloo World my name is {name}</p>
-//     </div>
-//   );
-// }
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <Person />
-        <Name />
-        <Surname name='Ape'/> */}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello 
-        </a>
-        <User name="Example Name"  surname="example Surname"/>
+        <Product price="100$" description="Հողամասի" name="լոբի"/>
+        <Product price="20$" description="ԹԹվի Ճյուր" name="Հյութ"/>
+        <Product price="75$" description="Պամիդոր Արտաշատի թարմ" name="Պոմիդոր"/>
       </header>
+      <Calculator />
     </div>
   );
 }
